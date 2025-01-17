@@ -1,4 +1,6 @@
-FROM public.ecr.aws/ubuntu/ubuntu:22.04
+ARG image=public.ecr.aws/ubuntu/ubuntu:22.04
+
+FROM ${image}
 
 WORKDIR /agent-go
 
